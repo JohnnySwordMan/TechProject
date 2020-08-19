@@ -1,2 +1,3 @@
+include ':designpattern'
 include ':app'
 rootProject.name = "TechProject"
