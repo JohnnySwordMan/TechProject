@@ -1,3 +1,4 @@
+include ':leetcode'
 include ':designpattern'
 include ':app'
 rootProject.name = "TechProject"

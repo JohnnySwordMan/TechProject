@@ -40,4 +40,5 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
 
     implementation project(":designpattern")
+    implementation project(":leetcode")
 }
