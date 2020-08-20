@@ -21,4 +21,13 @@ object FactoryManager {
         val factory = DatabaseNormalPlusFactory()
         factory.writeLog()
     }
+
+    // 抽象工厂
+    fun startAbstractFactory() {
+        val factory = CommonAbstractFactory()
+        val advancedFileLoggerProduct = factory.createFileLoggerProduct()
+        val advancedDatabaseLoggerProduct = factory.createDatabaseLoggerProduct()
+        advancedFileLoggerProduct.writeLog()
+        advancedDatabaseLoggerProduct.writeLog()
+    }
 }

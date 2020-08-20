@@ -28,7 +28,8 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
 //            FactoryManager.startSimpleFactory()
 //            FactoryManager.startNormalFactory()
-            FactoryManager.startNormalPlusFactory()
+//            FactoryManager.startNormalPlusFactory()
+            FactoryManager.startAbstractFactory()
         }
     }
 }

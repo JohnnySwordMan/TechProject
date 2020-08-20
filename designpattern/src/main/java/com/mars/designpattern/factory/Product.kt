@@ -37,3 +37,27 @@ class DatabaseLoggerProduct: LoggerProduct() {
     }
 
 }
+
+class AdvancedFileLoggerProduct: LoggerProduct() {
+
+    init {
+        log("create AdvancedFileLoggerProduct")
+    }
+
+    override fun writeLog() {
+        log("AdvancedFileLoggerProduct---writeLog")
+    }
+
+}
+
+class AdvancedDatabaseLoggerProduct: LoggerProduct() {
+
+    init {
+        log("create AdvancedDatabaseLoggerProduct")
+    }
+
+    override fun writeLog() {
+        log("AdvancedDatabaseLoggerProduct---writeLog")
+    }
+
+}
