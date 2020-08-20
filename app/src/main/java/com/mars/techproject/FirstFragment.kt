@@ -26,7 +26,9 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            FactoryManager.startSimpleFactory()
+//            FactoryManager.startSimpleFactory()
+//            FactoryManager.startNormalFactory()
+            FactoryManager.startNormalPlusFactory()
         }
     }
 }
