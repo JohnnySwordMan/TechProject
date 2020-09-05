@@ -41,4 +41,9 @@ dependencies {
 
     implementation project(":designpattern")
     implementation project(":leetcode")
+
+    // 一般来说，app层是不应该包含任何代码的，app层需要引入所有的依赖
+    // 如果这里不依赖login模块，那么通过ServiceLoader是拿不到loginService值的
+    implementation project(":spi:login")
+    implementation project(":spi:loginapi")
 }
